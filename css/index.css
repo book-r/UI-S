@@ -1,0 +1,55 @@
+.width-100 {
+  width: 100%;
+}
+.header {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.header .nav-dropdown .nav-dropdown-button .dropdown-content {
+  background-color: blue;
+}
+.header .nav-dropdown .nav-dropdown-button .dropdown-content-hidden {
+  display: none;
+}
+.header .header-login-button {
+  border: 1px solid black;
+  size: 24px;
+}
+.home-info {
+  display: flex;
+  justify-content: space-evenly;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.home-info .content {
+  width: 28%;
+  border: 1px solid black;
+  padding: 0 10px 0 10px;
+}
+.home-info .content h3 {
+  text-align: center;
+}
+.cta-banner {
+  background-image: url('../assets/HomeMain.jpg');
+  height: 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.cta-banner .cta-button {
+  margin-right: 120px;
+  padding: 15px 40px 15px 40px;
+  border: 1px solid black;
+  border-radius: 40px;
+  background-color: white;
+  background-color: #333;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
