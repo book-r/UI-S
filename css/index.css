@@ -1,6 +1,25 @@
 .width-100 {
   width: 100%;
 }
+.cta-banner {
+  background-image: url('../assets/HomeMain.jpg');
+  height: 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.cta-banner .cta-button {
+  margin-right: 120px;
+  padding: 15px 40px 15px 40px;
+  border: 1px solid #011E4C;
+  border-radius: 40px;
+  background-color: #2E294E;
+  color: #A8B2C4;
+}
+.cta-banner .cta-button:hover {
+  background-color: #A8B2C4;
+  color: #2E294E;
+}
 .header {
   width: 80%;
   display: flex;
@@ -9,13 +28,31 @@
   margin: 0 auto;
 }
 .header .nav-dropdown .nav-dropdown-button .dropdown-content {
-  background-color: blue;
+  background-color: #F1F1D4;
+}
+.header .nav-dropdown .nav-dropdown-button .dropdown-content a {
+  text-decoration: none;
+  color: #011E4C;
 }
 .header .nav-dropdown .nav-dropdown-button .dropdown-content-hidden {
   display: none;
 }
+.header .header-title:h1 {
+  font-family: 'cynzel';
+  color: #011E4C;
+}
 .header .header-login-button {
   border: 1px solid black;
+  padding: 8px 20px 8px 20px;
+  border-radius: 8px;
+  background-color: #2E294E;
+  color: #A8B2C4;
+}
+.header .header-login-button:hover {
+  background-color: #A8B2C4;
+  color: #2E294E;
+}
+.header .header-login-button:h2 {
   size: 24px;
 }
 .home-info {
@@ -29,27 +66,39 @@
   width: 28%;
   border: 1px solid black;
   padding: 0 10px 0 10px;
+  background-color: #F1F1D4;
 }
 .home-info .content h3 {
   text-align: center;
 }
-.cta-banner {
-  background-image: url('../assets/HomeMain.jpg');
-  height: 400px;
+.team-list-row {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
-.cta-banner .cta-button {
-  margin-right: 120px;
-  padding: 15px 40px 15px 40px;
+.team-list-row .team-member {
   border: 1px solid black;
-  border-radius: 40px;
-  background-color: white;
-  background-color: #333;
+  padding: 15px;
+  display: flex;
+  background-color: #F1F1D4;
+}
+.team-list-row .team-member img {
+  width: auto;
+  height: 100px;
+}
+.team-list-row .team-member .team-member-name {
+  display: block;
+}
+.team-list-row .team-member .hidden-member-info {
+  display: none;
+}
+.team-list-row .card-2 {
+  flex-direction: row-reverse;
 }
 html,
 body {
   margin: 0;
   padding: 0;
+}
+html p,
+body p {
+  font-family: 'oxygen', sans-serif;
 }

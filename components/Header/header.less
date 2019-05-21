@@ -9,7 +9,11 @@
 
         .nav-dropdown-button {
             .dropdown-content {
-                background-color: blue;
+                background-color: @color-parchment;
+                a {
+                    text-decoration: none;
+                    color: @color-primary;
+                }
             }
 
             .dropdown-content-hidden {
@@ -19,11 +23,26 @@
         }
     }
 
+    .header-title {
+        &:h1 {
+            font-family: @font-primary;
+            color: @color-primary;
+        }
+    }
+
     .header-login-button {
         border: 1px solid black;
-        size: 24px;
+        padding: 8px 20px 8px 20px;
+        border-radius: 8px;
+        background-color: @color-secondary;
+        color: @color-light;
+        &:hover {
+            background-color: @color-light;
+            color: @color-secondary;
+        }
 
-        h2 {
+        &:h2 {
+            size: 24px;
 
         }
     }
