@@ -1,13 +1,21 @@
 .header {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    background-image: url('../../assets/HomeMainAlt.jpg');
+    height: 600px;
+    padding-top: 30px;
 
-    .nav-dropdown {
+    .nav-banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        border: 1px solid black;
+        width: 80%;
+        padding: 0px 20px;
+        // background-color: @color-light;
+        // background-color: @color-lightFF;
+        background-color: #A8B2C480;
 
-        .nav-dropdown-button {
+        .nav-dropdown {
             .dropdown-content {
                 background-color: @color-parchment;
                 a {
@@ -21,29 +29,63 @@
             }
 
         }
-    }
-
-    .header-title {
-        &:h1 {
-            font-family: @font-primary;
+        .header-title {
+            &:h1 {
+                font-family: @font-primary;
+                color: @color-primary;
+            }
+        }
+    
+        .header-login-button {
+            border: 1px solid black;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 8px;
             color: @color-primary;
+            &:hover {
+                background-color: @color-light;
+                color: @color-secondary;
+            }
+    
+            &:h2 {
+                size: 24px;
+    
+            }
         }
     }
 
-    .header-login-button {
-        border: 1px solid black;
-        padding: 8px 20px 8px 20px;
-        border-radius: 8px;
-        background-color: @color-secondary;
-        color: @color-light;
-        &:hover {
-            background-color: @color-light;
-            color: @color-secondary;
-        }
 
-        &:h2 {
-            size: 24px;
 
+    .cta-banner {
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 200px;
+
+
+        .cta-motto {
+            width: 350px;
+            margin-left: 300px;
         }
+    
+        .cta-button{
+            margin-right: 120px;
+            padding: 15px 40px 15px 40px;
+            border: 1px solid @color-primary;
+            border-radius: 40px;
+            background-color: @color-secondary;
+            color: @color-light;
+
+            &:hover {
+                background-color: @color-light;
+                color: @color-secondary;
+            }
+        }
+    
     }
 }
