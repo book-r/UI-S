@@ -154,10 +154,18 @@ table {
 }
 .header .nav-banner .nav-dropdown .dropdown-content {
   background-color: #F1F1D4;
+  width: 200px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
 }
 .header .nav-banner .nav-dropdown .dropdown-content a {
   text-decoration: none;
   color: #011E4C;
+  font-size: 24px;
+  padding: 15px 0;
 }
 .header .nav-banner .nav-dropdown .dropdown-content-hidden {
   display: none;
