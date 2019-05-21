@@ -149,6 +149,7 @@ table {
   border: 1px solid black;
   width: 80%;
   padding: 8px 20px;
+  height: 65px;
   background-color: #A8B2C480;
 }
 .header .nav-banner .nav-dropdown .dropdown-content {
@@ -180,8 +181,8 @@ table {
   font-weight: bold;
 }
 .header .nav-banner .header-login-button:hover {
-  background-color: #A8B2C4;
-  color: #2E294E;
+  background-color: #2E294E;
+  color: #A8B2C4;
 }
 .header .cta-banner {
   height: 100%;
@@ -194,11 +195,14 @@ table {
 .header .cta-banner .cta-motto {
   width: 350px;
   margin-left: 300px;
+  background-color: #F1F1D4B3;
+  color: #232A3F;
+  padding: 20px;
+  border-radius: 10px;
 }
 .header .cta-banner .cta-button {
   margin-right: 120px;
   padding: 15px 40px 15px 40px;
-  border: 1px solid #011E4C;
   border-radius: 40px;
   background-color: #2E294E;
   color: #A8B2C4;
@@ -213,6 +217,7 @@ table {
   width: 85%;
   margin: 0 auto;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .home-info .content {
   width: 28%;
@@ -228,6 +233,29 @@ table {
 .home-info .content p {
   padding-bottom: 6px;
   font-size: 18px;
+}
+.currently-featured {
+  display: flex;
+  margin: 0 auto;
+  background-color: #011E4C;
+}
+.currently-featured .book-container {
+  display: flex;
+  max-height: 250px;
+  max-width: 554px;
+}
+.currently-featured .book-container .book-img {
+  width: auto;
+}
+.currently-featured .book-container .book-info {
+  overflow: hidden;
+  transition: max-width 0.3s ease-out;
+  width: auto;
+  max-width: 400px;
+  padding-bottom: 30px;
+}
+.currently-featured .book-container .hidden-book {
+  max-width: 0px;
 }
 .team-list-row {
   display: flex;
