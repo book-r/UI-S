@@ -160,6 +160,7 @@ table {
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
+  color: #011E4C;
 }
 .header .nav-banner .nav-dropdown .dropdown-content a {
   text-decoration: none;
@@ -174,22 +175,26 @@ table {
   font-family: 'cynzel';
   color: #011E4C;
 }
+.header .nav-banner a {
+  text-decoration: none;
+}
 .header .nav-banner .header-login-button {
-  border: 1px solid black;
+  border: 3px solid #011E4C;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 8px;
-  color: #011E4C;
-}
-.header .nav-banner .header-login-button h2 {
   font-size: 26px;
   margin: 0px;
   font-weight: bold;
+  color: #011E4C;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  font-family: 'cynzel';
 }
 .header .nav-banner .header-login-button:hover {
-  background-color: #2E294E;
+  background-color: #011E4C;
   color: #A8B2C4;
 }
 .header .cta-banner {
@@ -210,14 +215,19 @@ table {
 }
 .header .cta-banner .cta-button {
   margin-right: 120px;
-  padding: 15px 40px 15px 40px;
-  border-radius: 40px;
-  background-color: #2E294E;
+  padding: 6px 15px 6px 15px;
+  border-radius: 12px;
+  background-color: #011E4C;
   color: #A8B2C4;
+  font-size: 26px;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  font-family: 'cynzel';
 }
 .header .cta-banner .cta-button:hover {
+  border: 3px solid #011E4C;
   background-color: #A8B2C4;
-  color: #2E294E;
+  color: #011E4C;
 }
 .home-info {
   display: flex;
@@ -249,6 +259,10 @@ table {
   border: 2px solid #011E4C;
   padding: 20px;
 }
+.currently-featured h2 {
+  color: #011E4C;
+  font-size: 24px;
+}
 .currently-featured .book-container {
   display: flex;
   max-height: 250px;
@@ -269,27 +283,61 @@ table {
 }
 .team-list-row {
   display: flex;
+  display: center;
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 15px;
 }
-.team-list-row .team-member {
-  border: 1px solid black;
-  padding: 15px;
-  display: flex;
+.card-1,
+.card-2 {
+  perspective: 1000px;
+}
+.card-1:hover .team-member,
+.card-1.hover .team-member {
+  transform: rotateY(180deg);
+}
+.card-2:hover .team-member,
+.card-2.hover .team-member {
+  transform: rotateY(-180deg);
+}
+.card-1,
+.member-img,
+.member-info {
+  width: 300px;
+  height: 200px;
+}
+.card-2,
+.member-img,
+.member-info {
+  width: 300px;
+  height: 200px;
+}
+.team-member {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
   background-color: #F1F1D4;
+  border: 1px solid black;
 }
-.team-list-row .team-member .member-img img {
-  width: auto;
-  height: 100px;
+.member-img,
+.member-info {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.team-list-row .team-member .member-info .team-member-name {
-  display: block;
+.member-img {
+  z-index: 2;
 }
-.team-list-row .team-member .member-info .hidden-member-info {
-  display: none;
+.member-info {
+  transform: rotateY(180deg);
 }
-.team-list-row .card-2 {
-  flex-direction: row-reverse;
+.card-2 .member-info {
+  transform: rotateY(-180deg);
 }
 .footer {
-  background-image: url('../assets/Footer.jpg');
+  background-color: #011E4C;
+  color: #A8B2C4;
   margin-top: 40px;
+  height: 300px;
 }
