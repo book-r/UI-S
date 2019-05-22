@@ -140,6 +140,11 @@ table {
   height: 600px;
   padding-top: 30px;
 }
+@media (max-width: 500px) {
+  .header {
+    height: 275px;
+  }
+}
 .header .nav-banner {
   display: flex;
   justify-content: space-between;
@@ -151,6 +156,19 @@ table {
   height: 65px;
   background-color: #A8B2C480;
 }
+@media (max-width: 500px) {
+  .header .nav-banner {
+    flex-direction: column;
+    height: 220px;
+    width: 60%;
+    padding: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .header .nav-banner .nav-dropdown {
+    display: none;
+  }
+}
 .header .nav-banner .nav-dropdown .dropdown-content {
   background-color: #F1F1D4;
   width: 200px;
@@ -160,6 +178,11 @@ table {
   align-items: center;
   margin-top: 10px;
   color: #011E4C;
+}
+@media (max-width: 500px) {
+  .header .nav-banner .nav-dropdown .dropdown-content {
+    display: none;
+  }
 }
 .header .nav-banner .nav-dropdown .dropdown-content a {
   text-decoration: none;
@@ -177,13 +200,30 @@ table {
 .header .nav-banner a {
   text-decoration: none;
 }
+.header .nav-banner .mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .header .nav-banner .mobile {
+    display: block;
+    text-decoration: none;
+    font-size: 24px;
+    color: #011E4C;
+    width: 100%;
+    border-top: 2px solid #011E4C;
+    border-bottom: 2px solid #011E4C;
+    transition-duration: 0.4s;
+    text-align: center;
+    padding: 6px 0px;
+  }
+  .header .nav-banner .mobile:hover {
+    color: #A8B2C4;
+    background-color: #2E294E;
+  }
+}
 .header .nav-banner .header-login-button {
   border: 3px solid #011E4C;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 8px;
+  padding: 6px 15px 6px 15px;
   font-size: 26px;
   margin: 0px;
   font-weight: bold;
@@ -191,6 +231,16 @@ table {
   text-decoration: none;
   transition-duration: 0.4s;
   font-family: 'cynzel';
+}
+@media (max-width: 500px) {
+  .header .nav-banner .header-login-button {
+    width: 100%;
+    border-top: 2px solid #011E4C;
+    border-bottom: 2px solid #011E4C;
+    border-left: none;
+    border-right: none;
+    font-weight: normal;
+  }
 }
 .header .nav-banner .header-login-button:hover {
   background-color: #011E4C;
@@ -203,6 +253,11 @@ table {
   align-items: center;
   width: 80%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .header .cta-banner {
+    display: none;
+  }
 }
 .header .cta-banner .cta-motto {
   width: 350px;
@@ -224,6 +279,39 @@ table {
   font-family: 'cynzel';
 }
 .header .cta-banner .cta-button:hover {
+  border: 3px solid #011E4C;
+  background-color: #A8B2C4;
+  color: #011E4C;
+}
+.cta-mobile {
+  display: none;
+  padding: 10px 10px;
+}
+@media (max-width: 500px) {
+  .cta-mobile {
+    display: block;
+    background-color: #2E294EB3;
+  }
+}
+.cta-mobile .cta-motto h1 {
+  font-size: 24px;
+}
+.cta-mobile .cta-button {
+  width: 90%;
+  padding: 6px 15px 6px 15px;
+  background-color: #011E4C;
+  color: #A8B2C4;
+  font-size: 26px;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  font-family: 'cynzel';
+  border-top: 2px solid #011E4C;
+  border-bottom: 2px solid #011E4C;
+  border-left: none;
+  border-right: none;
+  margin-top: 30px;
+}
+.cta-mobile .cta-button:hover {
   border: 3px solid #011E4C;
   background-color: #A8B2C4;
   color: #011E4C;

@@ -2,6 +2,10 @@
     height: 600px;
     padding-top: 30px;
 
+    @media (max-width: 500px) {
+        height: 275px;
+    }
+
     .nav-banner {
         display: flex;
         justify-content: space-between;
@@ -15,7 +19,17 @@
         // background-color: @color-lightFF;
         background-color: #A8B2C480;
 
+        @media (max-width: 500px) {
+            flex-direction: column;
+            height: 220px;
+            width: 60%;
+            padding: 0px;
+        }
+
         .nav-dropdown {
+            @media (max-width: 500px) {
+                display: none;
+            }
             .nav-dropdown-button {
                 //https://github.com/jonsuh/hamburgers - stretch button
             }
@@ -29,6 +43,11 @@
                 margin-top: 10px;
                 color: @color-primary;
                 // border: 2.5px solid @lambda-red;
+
+                @media (max-width: 500px) {
+                    display: none;
+                }
+
                 a {
                     text-decoration: none;
                     color: @color-primary;
@@ -51,14 +70,32 @@
         a {
             text-decoration: none;
         }
+
+        .mobile {
+            display: none;
+            @media (max-width: 500px) {
+                display: block;
+                text-decoration: none;
+                font-size: 24px;
+                color: @color-primary;
+                width: 100%;
+                border-top: 2px solid @color-primary;
+                border-bottom: 2px solid @color-primary;
+                transition-duration: 0.4s;
+                text-align: center;
+                padding: 6px 0px;
+
+                &:hover {
+                    color: @color-light;
+                    background-color: @color-secondary;
+                }
+
+            }
+        }
     
         .header-login-button {
             border: 3px solid @color-primary;
-            padding-top: 6px;
-            padding-bottom: 6px;
-            padding-left: 15px;
-            padding-right: 15px;
-            border-radius: 8px;
+            padding: 6px 15px 6px 15px;
             color: @color-primary;
             font-size: 26px;
             margin: 0px;
@@ -67,6 +104,15 @@
             text-decoration: none;
             transition-duration: 0.4s;
             font-family: @font-primary;
+
+            @media (max-width: 500px) {
+                width: 100%;
+                border-top: 2px solid @color-primary;
+                border-bottom: 2px solid @color-primary;
+                border-left: none;
+                border-right: none;
+                font-weight: normal;
+            }
 
             &:hover {
                 background-color: @color-primary;
@@ -86,6 +132,10 @@
         align-items: center;
         width: 80%;
         margin: 0 auto;
+
+        @media(max-width: 500px) {
+            display: none;
+        }
 
         .cta-motto {
             width: 350px;
@@ -114,6 +164,43 @@
             }
         }
     
+    }
+}
+
+.cta-mobile {
+    display: none;
+    padding: 10px 10px;
+
+    @media(max-width: 500px) {
+        display: block;
+        background-color:  #2E294EB3;
+        
+    }
+    
+    .cta-motto h1{
+        font-size: 24px;
+    }
+
+    .cta-button{
+        width: 90%;
+        padding: 6px 15px 6px 15px;
+        background-color: @color-primary;
+        color: @color-light;
+        font-size: 26px;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        font-family: @font-primary;
+        border-top: 2px solid @color-primary;
+        border-bottom: 2px solid @color-primary;
+        border-left: none;
+        border-right: none;
+        margin-top: 30px;
+
+        &:hover {
+            border: 3px solid @color-primary;
+            background-color: @color-light;
+            color: @color-primary;
+        }
     }
 }
 
