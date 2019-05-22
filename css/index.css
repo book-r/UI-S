@@ -351,11 +351,22 @@ button {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home-info {
+    flex-direction: column;
+  }
+}
 .home-info .content {
   width: 28%;
   border: 1px solid black;
   padding: 15px;
   background-color: #F1F1D4;
+}
+@media (max-width: 500px) {
+  .home-info .content {
+    width: 90%;
+    margin: 10px;
+  }
 }
 .home-info .content h3 {
   text-align: center;
@@ -373,6 +384,11 @@ button {
   border: 2px solid #011E4C;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .currently-featured {
+    flex-direction: column;
+  }
+}
 .currently-featured h2 {
   color: #011E4C;
   font-size: 24px;
@@ -381,6 +397,11 @@ button {
   display: flex;
   max-height: 250px;
   max-width: 554px;
+}
+@media (max-width: 500px) {
+  .currently-featured .book-container {
+    margin-bottom: 15px;
+  }
 }
 .currently-featured .book-container .book-img {
   width: auto;
@@ -392,8 +413,18 @@ button {
   max-width: 400px;
   padding-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .currently-featured .book-container .book-info {
+    transition: none;
+  }
+}
 .currently-featured .book-container .hidden-book {
   max-width: 0px;
+}
+@media (max-width: 500px) {
+  .currently-featured .book-container .hidden-book {
+    max-width: 400px;
+  }
 }
 .team-list-row {
   display: flex;
