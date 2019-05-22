@@ -136,6 +136,9 @@ table {
 .width-100 {
   width: 100%;
 }
+button {
+  background-color: none;
+}
 .header {
   height: 600px;
   padding-top: 30px;
@@ -283,12 +286,17 @@ table {
   background-color: #A8B2C4;
   color: #011E4C;
 }
+@media (max-width: 500px) {
+  .header .about-mission {
+    display: none;
+  }
+}
 .cta-mobile {
   display: none;
-  padding: 10px 10px;
 }
 @media (max-width: 500px) {
   .cta-mobile {
+    padding: 10px 10px;
     display: block;
     background-color: #2E294EB3;
   }
@@ -315,6 +323,19 @@ table {
   border: 3px solid #011E4C;
   background-color: #A8B2C4;
   color: #011E4C;
+}
+.about-mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .about-mobile {
+    display: block;
+    background-color: #2E294EB3;
+    padding: 10px 10px;
+  }
+}
+.about-mobile .statement h1 {
+  font-size: 24px;
 }
 #home {
   background-image: url('../../assets/HomeMainAlt.jpg');
@@ -381,11 +402,24 @@ table {
   margin: 0 auto;
   margin-top: 30px;
 }
+@media (max-width: 500px) {
+  .team-list-row {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+}
 .team-list-row .card-1 {
   margin-right: 30px;
 }
+@media (max-width: 500px) {
+  .team-list-row .card-1 {
+    margin: 30px;
+  }
+}
 .team-list-row .card-2 {
   margin-left: 30px;
+}
+@media (max-width: 500px) {
 }
 .card-1,
 .card-2 {

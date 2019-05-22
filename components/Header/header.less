@@ -1,3 +1,7 @@
+button {
+    background-color: none;
+}
+
 .header {
     height: 600px;
     padding-top: 30px;
@@ -165,18 +169,24 @@
         }
     
     }
+
+    .about-mission {
+        @media(max-width:500px) {
+            display:none;
+        }
+    }
 }
 
 .cta-mobile {
     display: none;
-    padding: 10px 10px;
 
     @media(max-width: 500px) {
+        padding: 10px 10px;
         display: block;
         background-color:  #2E294EB3;
         
     }
-    
+
     .cta-motto h1{
         font-size: 24px;
     }
@@ -201,6 +211,21 @@
             background-color: @color-light;
             color: @color-primary;
         }
+    }
+}
+
+.about-mobile {
+    display: none;
+    
+    @media(max-width: 500px) {
+        display: block;
+        background-color:  #2E294EB3;
+        padding: 10px 10px;
+        
+    }
+
+    .statement h1{
+        font-size: 24px;
     }
 }
 
