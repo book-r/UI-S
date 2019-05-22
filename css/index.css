@@ -137,7 +137,6 @@ table {
   width: 100%;
 }
 .header {
-  background-image: url('../../assets/HomeMainAlt.jpg');
   height: 600px;
   padding-top: 30px;
 }
@@ -229,6 +228,12 @@ table {
   background-color: #A8B2C4;
   color: #011E4C;
 }
+#home {
+  background-image: url('../../assets/HomeMainAlt.jpg');
+}
+#about {
+  background-image: url('../../assets/AboutMain.jpg');
+}
 .home-info {
   display: flex;
   justify-content: space-evenly;
@@ -284,9 +289,15 @@ table {
 .team-list-row {
   display: flex;
   display: center;
-  width: 700px;
+  width: 760px;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 30px;
+}
+.team-list-row .card-1 {
+  margin-right: 30px;
+}
+.team-list-row .card-2 {
+  margin-left: 30px;
 }
 .card-1,
 .card-2 {
@@ -294,34 +305,34 @@ table {
 }
 .card-1:hover .team-member,
 .card-1.hover .team-member {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 .card-2:hover .team-member,
 .card-2.hover .team-member {
-  transform: rotateY(-180deg);
+  transform: rotateY(180deg);
 }
 .card-1,
 .member-img,
 .member-info {
-  width: 300px;
+  width: 350px;
   height: 200px;
 }
 .card-2,
 .member-img,
 .member-info {
-  width: 300px;
+  width: 350px;
   height: 200px;
 }
 .team-member {
-  transition: 0.6s;
+  transition: 0.8s;
   transform-style: preserve-3d;
   position: relative;
-  background-color: #F1F1D4;
-  border: 1px solid black;
 }
 .member-img,
 .member-info {
   backface-visibility: hidden;
+  background-color: #F1F1D4;
+  border: 1px solid black;
   position: absolute;
   top: 0;
   left: 0;
@@ -330,14 +341,14 @@ table {
   z-index: 2;
 }
 .member-info {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 .card-2 .member-info {
-  transform: rotateY(-180deg);
+  transform: rotateY(180deg);
 }
 .footer {
   background-color: #011E4C;
   color: #A8B2C4;
   margin-top: 40px;
-  height: 300px;
+  height: 200px;
 }
