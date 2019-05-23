@@ -455,6 +455,39 @@ table {
 .home-lower-content .testimonial .testimonial-review .stars .filled {
   color: #066339;
 }
+.headerabout {
+  height: 600px;
+  width: 100%;
+  background: url('../assets/AboutMain.jpg');
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .headerabout {
+    display: none;
+  }
+}
+.headerabout .about-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.headerabout .about-container .about-team {
+  width: 380px;
+  margin-left: 300px;
+  background-color: #034732B3;
+  padding: 20px;
+  border-radius: 10px;
+}
+.headerabout .about-container .about-team h2 {
+  color: #01172F;
+  font-size: 24px;
+  line-height: 1.4;
+}
+.about-mobile {
+  display: none;
+}
 .team-list-row {
   display: flex;
   display: center;
