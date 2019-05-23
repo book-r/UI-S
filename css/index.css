@@ -173,12 +173,15 @@ table {
 }
 .nav nav .nav-links {
   list-style: none;
-  text-decoration: none;
   display: flex;
 }
-.nav nav .nav-links li {
+.nav nav .nav-links a {
+  text-decoration: none;
+}
+.nav nav .nav-links a li {
   margin: 0 5px;
   letter-spacing: 0.5px;
+  color: #F5F5F5;
 }
 .header {
   height: 600px;
@@ -345,12 +348,38 @@ table {
 .featured-container .currently-featured .book-container .book-info {
   overflow: hidden;
   transition: max-width 0.3s ease-out;
-  width: auto;
   max-width: 400px;
-  padding-bottom: 30px;
+  margin: auto 0;
+}
+.featured-container .currently-featured .book-container .book-info .info-container {
+  width: 400px;
+}
+.featured-container .currently-featured .book-container .book-info .info-container h4 {
+  padding: 0 8px;
+  line-height: 1.6;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+.featured-container .currently-featured .book-container .book-info .info-container p {
+  padding: 0 8px;
+  line-height: 1.4;
+}
+.featured-container .currently-featured .book-container .book-info .info-container .book-read-more {
+  padding: 2px 8px;
+  font-size: 16px;
+  background-color: #034732;
+  color: #FCFCFC;
+  border: 2px solid #066339;
+  border-radius: 4px;
+  margin-left: 240px;
+}
+.featured-container .currently-featured .book-container .book-info .info-container .book-read-more:hover {
+  background-color: #FCFCFC;
+  color: #034732;
+  transition-duration: 0.4s;
 }
 @media (max-width: 500px) {
-  .featured-container .currently-featured .book-container .book-info {
+  .featured-container .currently-featured .book-container .book-info .info-container {
     transition: none;
   }
 }

@@ -47,13 +47,46 @@
             .book-info {
                 overflow: hidden;
                 transition: max-width 0.3s ease-out;
-                width: auto;
                 // min-width: 200px;
                 max-width: 400px;
-                padding-bottom: 30px;
+                margin: auto 0;
 
-                @media(max-width: 500px) {
-                    transition: none;
+                .info-container {
+                    width: 400px;
+
+                    h4 {
+                        // text-align: center;
+                        padding: 0 8px;
+                        line-height: 1.6;
+                        font-size: 18px;
+                        font-family: @font-base;
+                    }
+
+                    p {
+                        padding: 0 8px;
+                        line-height: 1.4;
+                    }
+
+                    .book-read-more {
+                        padding: 2px 8px;
+                        // align-self: right;
+                        font-size: 16px;
+                        background-color: @color-teritary;
+                        color: @color-offwhite;
+                        border: 2px solid @color-secondary;
+                        border-radius: 4px;
+                        margin-left: 240px;
+
+                        &:hover {
+                            background-color: @color-offwhite;
+                            color: @color-teritary;
+                            transition-duration: 0.4s;
+                        }
+                    }
+
+                    @media(max-width: 500px) {
+                        transition: none;
+                    }
                 }
             }
             .hidden-book {
