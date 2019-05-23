@@ -1,7 +1,7 @@
 class BoxDisplay {
-    constructor(accordian){
-        this.accordian = accordian
-        this.image = accordian.querySelector('.book-img')
+    constructor(boxes){
+        this.boxes = boxes
+        this.tab = boxes.querySelector('.book-img')
         this.info = accordian.querySelector('.book-info')
         // console.log('info', this.info)
         // console.log('images', this.image)
@@ -19,10 +19,10 @@ class BoxDisplay {
     }
 }
 
-const accordianMaker = document.querySelectorAll('.book-container');
+const boxMaker = document.querySelectorAll('.info-box');
 // console.log(accordianMaker)
 
-accordianMaker.forEach((e,index) => {
+boxMaker.forEach((e,index) => {
     const newAccord = new BoxDisplay(e)
     // console.log('accordianmaker', newAccord, index)
 })

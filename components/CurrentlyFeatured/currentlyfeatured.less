@@ -68,20 +68,11 @@
                     }
 
                     .book-read-more {
-                        padding: 2px 8px;
-                        // align-self: right;
+                        .btn-primary (@color-secondary, @color-offwhite, @color-teritary);
+                        width: 120px;
+                        height: 30px;
                         font-size: 16px;
-                        background-color: @color-teritary;
-                        color: @color-offwhite;
-                        border: 2px solid @color-secondary;
-                        border-radius: 4px;
                         margin-left: 240px;
-
-                        &:hover {
-                            background-color: @color-offwhite;
-                            color: @color-teritary;
-                            transition-duration: 0.4s;
-                        }
                     }
 
                     @media(max-width: 500px) {

@@ -2,6 +2,18 @@
     width: 100%;
   }
 
-  // @color-opacity(@color, @opacity) {
-  //   background-color: `${@color}{@opacity}`
-  // }
+
+.btn-primary (@button-color, @button-font, @button-change) {
+    font-weight: bold;
+    font-style: @font-secondary;
+    background-color: @button-color;
+    text-align: center;
+    color: @button-font;
+    border-radius: 4px;
+    transition-duration: .6s;
+    border: none;
+
+    &:hover {
+      background-color: @button-change;
+    }
+}

@@ -23,21 +23,45 @@
         .nav-links {
             list-style: none;
             display: flex;
+            align-items: center;
 
             a {
                 text-decoration: none;
                 li {
                     margin: 0 5px;
                     letter-spacing: 0.5px;
-                    color: @color-white;
+                    color: @color-offwhite;
 
                     &:hover {
                         color: @color-primary;
-                        transform: scale(1.15);
                     }
+                }
+
+                .nav-button {
+                    width: 100px;
+                    font-weight: bold;
+                    font-style: @font-secondary;
+                    background-color: @color-primary;
+                    text-align: center;
+                    color: @color-offwhite;
+                    padding: 6px;
+                    border-radius: 8px;
+                    transition-duration: .6s;
+                
+                    &:hover {
+                      background-color: @color-dark;
+                      color: @color-offwhite;
+                    }
+                }
+
+                #break {
+                    border-left: 1px solid @color-offwhite;
+                    padding-left: 15px;
+                    margin-left: 15px;
                 }
             }
             
         }
+
     }
 }

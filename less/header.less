@@ -8,15 +8,17 @@
     @media(max-width: 500px) {
         display: none;
     }
+
     .cta-container {
-        width: 80%;
+        max-width: 1200px;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+        margin: 0 auto;
 
         .cta-motto {
             width: 380px;
-            margin-left: 300px;
             background-color:  #034732B3;  //70% - HEX Opacity https://gist.github.com/frankyonnetti/9400858
             padding: 20px;
             border-radius: 10px;
@@ -28,23 +30,12 @@
             }
         }
 
-        .cta-button{
-            margin-right: 120px;
-            padding: 6px 15px 6px 15px;
-            border-radius: 12px;
-            background-color: @color-primary;
-            color: @color-light;
-            font-weight: none;
-            font-size: 26px;
-            transition-duration: 0.4s;
-            text-decoration: none;
-            font-family: @font-secondary;
-
-            &:hover {
-                border: 3px solid @color-primary;
-                background-color: @color-light;
-                color: @color-primary;
-            }
+        .cta-button {
+            .btn-primary (@color-secondary, @color-offwhite, @color-teritary);
+            width: 180px;
+            height: 60px;
+            font-size: 22px;
+            border: none;
         }
     }
 }
