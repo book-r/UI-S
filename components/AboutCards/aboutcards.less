@@ -1,0 +1,103 @@
+.team-list-row {
+    display: flex;
+    display: center;
+    width: 760px;
+    margin: 0 auto;
+    margin-top: 30px;
+    @media (max-width: 500px) {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .card-1 {
+        margin-right: 30px;
+        @media(max-width: 500px) {
+            margin: 30px;
+            
+        }
+
+    }
+
+    .card-2 {
+        margin-left: 30px;
+        @media(max-width: 500px) {
+            // margin: 0px;
+        }
+    }
+
+    .card-1, .card-2 {
+        .team-member {
+            .member-img {
+                display: flex;
+                .img-holder {
+                    padding: 15px;
+                    
+                }
+                .p-holder {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h3 {
+                        width: auto;
+                        padding-bottom: 10px;
+                    }
+                    p {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Flip Styling
+.card-1, .card-2 {
+    perspective: 1000px;
+
+}
+
+.card-1:hover .team-member, .card-1.hover .team-member {
+    transform: rotateY(-180deg);
+}
+
+.card-2:hover .team-member, .card-2.hover .team-member {
+    transform: rotateY(180deg);
+}
+
+.card-1, .member-img, .member-info {
+    width: 350px;
+    height: 200px;
+}
+
+.card-2, .member-img, .member-info {
+    width: 350px;
+    height: 200px;
+}
+
+.team-member {
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.member-img, .member-info {
+    backface-visibility: hidden;
+    background-color: @color-parchment;
+    border: 1px solid black;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.member-img {
+    z-index: 2;
+}
+
+.member-info {
+    transform: rotateY(-180deg)
+}
+
+.card-2 .member-info {
+    transform: rotateY(180deg)
+}

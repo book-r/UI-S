@@ -1,0 +1,238 @@
+.header {
+    height: 600px;
+    width: 100%;
+    background-image: url('../assets/HomeMainAlt.jpg');
+    display: flex;
+    align-items: center;
+
+    @media(max-width: 500px) {
+        display: none;
+    }
+    .cta-container {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .cta-motto {
+            width: 380px;
+            margin-left: 300px;
+            background-color:  #034732B3;  //70% - HEX Opacity https://gist.github.com/frankyonnetti/9400858
+            padding: 20px;
+            border-radius: 10px;
+
+            h2 {
+                color: @color-dark;
+                font-size: 24px;
+                line-height: 1.4;
+            }
+        }
+
+        .cta-button{
+            margin-right: 120px;
+            padding: 6px 15px 6px 15px;
+            border-radius: 12px;
+            background-color: @color-primary;
+            color: @color-light;
+            font-weight: none;
+            font-size: 26px;
+            transition-duration: 0.4s;
+            text-decoration: none;
+            font-family: @font-secondary;
+
+            &:hover {
+                border: 3px solid @color-primary;
+                background-color: @color-light;
+                color: @color-primary;
+            }
+        }
+    }
+}
+
+.cta-mobile {
+    display: none;
+
+    @media(max-width: 500px) {
+        padding: 10px 10px;
+        display: block;
+        background-color:  #2E294EB3;
+        
+    }
+
+    .cta-motto h1{
+        font-size: 24px;
+    }
+
+    .cta-button{
+        width: 90%;
+        padding: 6px 15px 6px 15px;
+        background-color: @color-primary;
+        color: @color-light;
+        font-size: 26px;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        font-family: @font-primary;
+        border-top: 2px solid @color-primary;
+        border-bottom: 2px solid @color-primary;
+        border-left: none;
+        border-right: none;
+        margin-top: 30px;
+
+        &:hover {
+            border: 3px solid @color-primary;
+            background-color: @color-light;
+            color: @color-primary;
+        }
+    }
+}
+
+.header #home {
+    background-image: url('../assets/HomeMain.jpg');
+}
+
+
+.header #about {
+    background-image: url('../assets/AboutMain.jpg')
+}
+
+
+
+/////////////////// OLD CODE. TOSS LATER ///////////////////////////////
+// .about-mobile {
+//     display: none;
+    
+//     @media(max-width: 500px) {
+//         display: block;
+//         background-color:  #2E294EB3;
+//         padding: 10px 10px;
+        
+//     }
+
+//     .statement h1{
+//         font-size: 24px;
+//     }
+// }
+
+
+
+// @media (max-width: 500px) {
+//     height: 275px;
+// }
+
+// .nav-banner {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin: 0 auto;
+//     border: 1px solid black;
+//     width: 80%;
+//     padding: 8px 20px;
+//     height: 65px;
+//     // background-color: @color-light;
+//     // background-color: @color-lightFF;
+//     background-color: #A8B2C480;
+
+//     @media (max-width: 500px) {
+//         flex-direction: column;
+//         height: 220px;
+//         width: 60%;
+//         padding: 0px;
+//     }
+
+//     .nav-dropdown {
+//         @media (max-width: 500px) {
+//             display: none;
+//         }
+//         .nav-dropdown-button {
+//             //https://github.com/jonsuh/hamburgers - stretch button
+//         }
+//         .dropdown-content {
+//             background-color: @color-parchment;
+//             width: 200px;
+//             position: absolute;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;  
+//             margin-top: 10px;
+//             color: @color-primary;
+//             // border: 2.5px solid @lambda-red;
+
+//             @media (max-width: 500px) {
+//                 display: none;
+//             }
+
+//             a {
+//                 text-decoration: none;
+//                 color: @color-primary;
+//                 font-size: 24px;
+//                 padding: 15px 0;
+//             }
+//         }
+
+//         .dropdown-content-hidden {
+//             display: none;
+//         }
+
+//     }
+//     .header-title {
+//         &:h1 {
+//             font-family: @font-primary;
+//             color: @color-primary;
+//         }
+//     }
+//     a {
+//         text-decoration: none;
+//     }
+
+//     .mobile {
+//         display: none;
+//         @media (max-width: 500px) {
+//             display: block;
+//             text-decoration: none;
+//             font-size: 24px;
+//             color: @color-primary;
+//             width: 100%;
+//             border-top: 2px solid @color-primary;
+//             border-bottom: 2px solid @color-primary;
+//             transition-duration: 0.4s;
+//             text-align: center;
+//             padding: 6px 0px;
+//             background-color: @color-light;
+
+//             &:hover {
+//                 color: @color-light;
+//                 background-color: @color-secondary;
+//             }
+
+//         }
+//     }
+
+//     .header-login-button {
+//         border: 3px solid @color-primary;
+//         padding: 6px 15px 6px 15px;
+//         color: @color-primary;
+//         font-size: 26px;
+//         margin: 0px;
+//         font-weight: bold;
+//         color: @color-primary;
+//         text-decoration: none;
+//         transition-duration: 0.4s;
+//         font-family: @font-primary;
+
+//         @media (max-width: 500px) {
+//             width: 100%;
+//             border-top: 2px solid @color-primary;
+//             border-bottom: 2px solid @color-primary;
+//             border-left: none;
+//             border-right: none;
+//             font-weight: normal;
+//         }
+
+//         &:hover {
+//             background-color: @color-primary;
+//             color: @color-light;
+//             // .button2:hover { -- MAYBE
+// //   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);}
+//         }
+//     }
+// }
