@@ -1,53 +1,67 @@
-.currently-featured {
+.featured-container {
+    padding: 15px;
+    background-color: @color-primary;
     display: flex;
-    // padding-top: 40px;
-    margin: 0 auto;
-    max-width: 1100px;
-    // background-color: @color-primary;
-    border: 2px solid @color-primary;
-    padding: 20px;
-
-    @media(max-width: 500px) {
-        flex-direction: column;
-    }
+    flex-direction: column;
+    align-items: center;
 
     h2 {
-        color: @color-primary;
-        font-size: 24px;
+        max-height: 30px;
+        color: @color-light;
+        padding-bottom: 10px;
     }
 
-    .book-container {
+    .currently-featured {
         display: flex;
-        max-height: 250px;
-        max-width: 554px;
+        // padding-top: 40px;
+        margin: 0 auto;
+        max-width: 1100px;
+        border: 3px solid @color-teritary;
+        padding: 20px;
+        background-color: @color-offwhite;
+
         @media(max-width: 500px) {
-            margin-bottom: 15px;
+            flex-direction: column;
         }
 
-        .book-img {
-            width: auto;
-            // max-width: 180px;
-            // height: auto;
-            // margin: auto 0;
+        h2 {
+            color: @color-primary;
+            font-size: 24px;
         }
 
-        .book-info {
-            overflow: hidden;
-            transition: max-width 0.3s ease-out;
-            width: auto;
-            // min-width: 200px;
-            max-width: 400px;
-            padding-bottom: 30px;
-
+        .book-container {
+            display: flex;
+            max-height: 250px;
+            max-width: 554px;
             @media(max-width: 500px) {
-                transition: none;
+                margin-bottom: 15px;
             }
-        }
-        .hidden-book {
-            max-width: 0px;
 
-            @media(max-width: 500px){
+            .book-img {
+                width: auto;
+                // max-width: 180px;
+                // height: auto;
+                // margin: auto 0;
+            }
+
+            .book-info {
+                overflow: hidden;
+                transition: max-width 0.3s ease-out;
+                width: auto;
+                // min-width: 200px;
                 max-width: 400px;
+                padding-bottom: 30px;
+
+                @media(max-width: 500px) {
+                    transition: none;
+                }
+            }
+            .hidden-book {
+                max-width: 0px;
+
+                @media(max-width: 500px){
+                    max-width: 400px;
+                }
             }
         }
     }
