@@ -15,6 +15,7 @@ html h5,
 body h5 {
   font-family: 'Arvo';
   color: #020207;
+  letter-spacing: 1.4px;
 }
 html p,
 body p {
@@ -147,9 +148,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.width-100 {
-  width: 100%;
-}
 .nav {
   width: 100%;
   height: 100%;
@@ -183,6 +181,7 @@ table {
   margin: 0 5px;
   letter-spacing: 0.5px;
   color: #FCFCFC;
+  font-family: 'Raleway', Arial, sans-serif;
 }
 .nav nav .nav-links a li:hover {
   color: #028090;
@@ -197,6 +196,8 @@ table {
   padding: 6px;
   border-radius: 8px;
   transition-duration: 0.6s;
+  letter-spacing: 2px;
+  font-family: 'Raleway', Arial, sans-serif;
 }
 .nav nav .nav-links a .nav-button:hover {
   background-color: #01172F;
@@ -246,6 +247,7 @@ table {
   color: #FCFCFC;
   border-radius: 4px;
   transition-duration: 0.6s;
+  letter-spacing: 1.4px;
   width: 180px;
   height: 60px;
   font-size: 22px;
@@ -357,7 +359,7 @@ table {
   font-family: 'Raleway', Arial, sans-serif;
 }
 .home-info .content p {
-  color: #A8B2C4;
+  color: #FCFCFC;
   padding-bottom: 6px;
   font-size: 16px;
   font-family: base;
@@ -369,16 +371,23 @@ table {
   flex-direction: column;
   align-items: center;
 }
-.featured-container h2 {
+.featured-container .featured-header-container {
+  max-width: 1100px;
+  width: 100%;
+  text-align: left;
+}
+.featured-container .featured-header-container h2 {
   max-height: 30px;
   color: #A8B2C4;
+  letter-spacing: 1.4px;
   padding-bottom: 10px;
+  font-family: 'Raleway', Arial, sans-serif;
 }
 .featured-container .currently-featured {
   display: flex;
   margin: 0 auto;
-  max-width: 1100px;
   border: 3px solid #034732;
+  border-radius: 8px;
   padding: 20px;
   background-color: #FCFCFC;
 }
@@ -432,6 +441,7 @@ table {
   border-radius: 4px;
   transition-duration: 0.6s;
   border: none;
+  letter-spacing: 1.4px;
   width: 120px;
   height: 30px;
   font-size: 16px;
