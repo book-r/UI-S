@@ -1,0 +1,42 @@
+.home-lower-content {
+    .testimonial {
+        display: flex;
+        max-width: 900px;
+        width: 100%;
+        margin: 20px auto;
+        background-color: @color-offwhite;
+        border: 2px solid @color-black;
+
+        .testimonial-img {
+            margin: 15px;
+            border-right: 2px solid @color-secondary;
+
+            .test-img-holder {
+
+                img {
+                    border-radius: 50%;
+                    padding-right: 20px;
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+
+        }
+
+        .testimonial-review {
+            padding: 10px;
+            .name {
+                margin: 10px 0 0 40px;
+            }
+            .stars {
+                text-align: center;
+                color: @color-black;
+                letter-spacing: 10px;
+
+                .filled {
+                    color: @color-secondary;
+                }
+            }
+        }
+    }
+}

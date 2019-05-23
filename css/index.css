@@ -183,10 +183,14 @@ table {
   letter-spacing: 0.5px;
   color: #F5F5F5;
 }
+.nav nav .nav-links a li:hover {
+  color: #028090;
+  transform: scale(1.15);
+}
 .header {
   height: 600px;
   width: 100%;
-  background-image: url('../assets/HomeMainAlt.jpg');
+  background: url('../assets/HomeMainAlt.jpg');
   display: flex;
   align-items: center;
 }
@@ -263,11 +267,39 @@ table {
   background-color: #A8B2C4;
   color: #028090;
 }
-.header #home {
-  background-image: url('../assets/HomeMain.jpg');
+.footer {
+  background-color: #066339;
+  color: #A8B2C4;
+  margin-top: 40px;
+  height: 160px;
 }
-.header #about {
-  background-image: url('../assets/AboutMain.jpg');
+.footer .footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer-container .footer-columns {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto 0;
+  padding-top: 20px;
+}
+.footer .footer-container .footer-columns .footer-section {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-container .footer-columns .footer-section a {
+  text-decoration: none;
+  color: #A8B2C4;
+  line-height: 1.6;
+}
+.footer .footer-copyright {
+  text-align: center;
+  padding-top: 30px;
 }
 .home-info {
   display: flex;
@@ -391,6 +423,38 @@ table {
     max-width: 400px;
   }
 }
+.home-lower-content .testimonial {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  margin: 20px auto;
+  background-color: #FCFCFC;
+  border: 2px solid #020207;
+}
+.home-lower-content .testimonial .testimonial-img {
+  margin: 15px;
+  border-right: 2px solid #066339;
+}
+.home-lower-content .testimonial .testimonial-img .test-img-holder img {
+  border-radius: 50%;
+  padding-right: 20px;
+  width: 150px;
+  height: 150px;
+}
+.home-lower-content .testimonial .testimonial-review {
+  padding: 10px;
+}
+.home-lower-content .testimonial .testimonial-review .name {
+  margin: 10px 0 0 40px;
+}
+.home-lower-content .testimonial .testimonial-review .stars {
+  text-align: center;
+  color: #020207;
+  letter-spacing: 10px;
+}
+.home-lower-content .testimonial .testimonial-review .stars .filled {
+  color: #066339;
+}
 .team-list-row {
   display: flex;
   display: center;
@@ -486,40 +550,6 @@ table {
 }
 .card-2 .member-info {
   transform: rotateY(180deg);
-}
-.footer {
-  background-color: #066339;
-  color: #A8B2C4;
-  margin-top: 40px;
-  height: 160px;
-}
-.footer .footer-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.footer .footer-container .footer-columns {
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  margin: auto 0;
-  padding-top: 20px;
-}
-.footer .footer-container .footer-columns .footer-section {
-  margin: auto 0;
-  display: flex;
-  flex-direction: column;
-}
-.footer .footer-container .footer-columns .footer-section a {
-  text-decoration: none;
-  color: #A8B2C4;
-  line-height: 1.6;
-}
-.footer .footer-copyright {
-  text-align: center;
-  padding-top: 30px;
 }
 @font-face {
   font-family: 'Arvo';
