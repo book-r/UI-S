@@ -378,7 +378,7 @@ table {
 }
 .featured-container .featured-header-container h2 {
   max-height: 30px;
-  color: #A8B2C4;
+  color: #FCFCFC;
   letter-spacing: 1.4px;
   padding-bottom: 10px;
   font-family: 'Raleway', Arial, sans-serif;
@@ -470,6 +470,8 @@ table {
   margin: 20px auto;
   background-color: #FCFCFC;
   border: 2px solid #020207;
+  box-shadow: 3px 3px 5px 1px #353b48;
+  border-radius: 10px;
 }
 .home-lower-content .testimonial .testimonial-img {
   margin: 15px;
