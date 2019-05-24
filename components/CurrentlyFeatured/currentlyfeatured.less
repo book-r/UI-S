@@ -4,10 +4,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media(max-width: 500px) {
+        padding: 0;
+    }
+
     .featured-header-container {
         max-width: 1100px;
         width: 100%;
         text-align: left;
+
+        @media(max-width: 500px) {
+            max-width: 500px;
+        }
         
         h2 {
             max-height: 30px;
@@ -20,7 +29,6 @@
 
     .currently-featured {
         display: flex;
-        // padding-top: 40px;
         margin: 0 auto;
 
         border: 3px solid @color-teritary;
@@ -43,27 +51,31 @@
             max-width: 554px;
             @media(max-width: 500px) {
                 margin-bottom: 15px;
+                max-width: 450px;
             }
 
             .book-img {
                 width: auto;
-                // max-width: 180px;
-                // height: auto;
-                // margin: auto 0;
             }
 
             .book-info {
                 overflow: hidden;
                 transition: max-width 0.3s ease-out;
-                // min-width: 200px;
                 max-width: 400px;
                 margin: auto 0;
+
+                @media(max-width: 500px) {
+                    max-width: 280px;
+                }
 
                 .info-container {
                     width: 400px;
 
+                    @media(max-width:500px) {
+                        width: 280px;
+                    }
+
                     h4 {
-                        // text-align: center;
                         padding: 0 8px;
                         line-height: 1.6;
                         font-size: 18px;
@@ -81,6 +93,10 @@
                         height: 30px;
                         font-size: 16px;
                         margin-left: 240px;
+
+                        @media(max-width: 500px) {
+                            margin-left: 8px;
+                        }
                     }
 
                     @media(max-width: 500px) {

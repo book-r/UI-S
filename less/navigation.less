@@ -16,6 +16,10 @@
         font-family: @font-secondary;
         font-size: 18px;
 
+        @media(max-width: 500px) {
+            flex-direction: column;
+        }
+
         .nav-logo img {
             height: 50px;
         }
@@ -24,17 +28,35 @@
             list-style: none;
             display: flex;
             align-items: center;
+            @media(max-width:500px) {
+                flex-direction: column;
+                width: 100%;
+            }
 
             a {
                 text-decoration: none;
+
+                @media(max-width:500px) {
+                    width: 100%;
+                    text-align: center;
+                }
                 li {
                     margin: 0 5px;
                     letter-spacing: 0.5px;
                     color: @color-offwhite;
                     font-family: @font-secondary;
+                    @media (max-width: 500px) {
+                        max-width: 500px;
+                        width:100%;
+                        line-height: 2;
+                        transition-duration: .4s;
+                    }
 
                     &:hover {
                         color: @color-primary;
+                        @media(max-width:500px) {
+                            color: @color-black;
+                        }
                     }
                 }
 
@@ -50,6 +72,12 @@
                     transition-duration: .6s;
                     letter-spacing: 2px;
                     font-family: @font-secondary;
+                    @media(max-width:500px) {
+                        border: none;
+                        width: 100%;
+                        margin: 0px;
+                        border-radius: 0px;
+                    }
                 
                     &:hover {
                       background-color: @color-dark;
@@ -61,6 +89,19 @@
                     border-left: 1px solid @color-offwhite;
                     padding-left: 15px;
                     margin-left: 15px;
+
+                    @media(max-width: 500px) {
+                        border-left: none;
+                        padding:0px;
+                        margin: 0px;
+
+                    }
+                }
+            }
+
+            .icon {
+                @media(max-width: 500px) {
+                    display: none;
                 }
             }
             

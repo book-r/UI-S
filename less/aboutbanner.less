@@ -32,41 +32,21 @@
 
 .about-mobile {
     display: none;
+
+    @media(max-width: 500px) {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: @color-secondary;
+    
+    }
+
+    .statement h2{
+        font-size: 24px;
+        font-family: @font-secondary;
+        color: @color-offwhite;
+        font-weight: normal;
+
+    }
 }
-
-// .cta-mobile {
-//     display: none;
-
-//     @media(max-width: 500px) {
-//         padding: 10px 10px;
-//         display: block;
-//         background-color:  #2E294EB3;
-        
-//     }
-
-//     .cta-motto h1{
-//         font-size: 24px;
-//     }
-
-//     .cta-button{
-//         width: 90%;
-//         padding: 6px 15px 6px 15px;
-//         background-color: @color-primary;
-//         color: @color-light;
-//         font-size: 26px;
-//         transition-duration: 0.4s;
-//         text-decoration: none;
-//         font-family: @font-primary;
-//         border-top: 2px solid @color-primary;
-//         border-bottom: 2px solid @color-primary;
-//         border-left: none;
-//         border-right: none;
-//         margin-top: 30px;
-
-//         &:hover {
-//             border: 3px solid @color-primary;
-//             background-color: @color-light;
-//             color: @color-primary;
-//         }
-//     }
-// }

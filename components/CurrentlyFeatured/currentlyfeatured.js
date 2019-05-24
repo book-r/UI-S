@@ -3,9 +3,6 @@ class Accordian {
         this.accordian = accordian
         this.image = accordian.querySelector('.book-img')
         this.info = accordian.querySelector('.book-info')
-        // console.log('info', this.info)
-        // console.log('images', this.image)
-        // this.imagesArray = thi
         this.image.addEventListener('click', () => this.select())
     }
 
@@ -20,10 +17,8 @@ class Accordian {
 }
 
 const accordianMaker = document.querySelectorAll('.book-container');
-// console.log(accordianMaker)
 
-accordianMaker.forEach((e,index) => {
+accordianMaker.forEach(e => {
     const newAccord = new Accordian(e)
-    // console.log('accordianmaker', newAccord, index)
 })
 

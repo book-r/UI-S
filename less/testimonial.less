@@ -11,6 +11,11 @@
         box-shadow: 3px 3px 5px 1px #353b48;
         border-radius:  10px;
 
+        @media(max-width: 500px) {
+            max-width: 500px;
+            width: 98%
+        }
+
         .testimonial-img {
             margin: 15px;
             border-right: 2px solid @color-secondary;
@@ -25,7 +30,6 @@
                     box-shadow: 3px 3px 5px 1px #9a9da3;
                 }
             }
-
         }
 
         .testimonial-review {
@@ -34,9 +38,11 @@
             p {
                 line-height: 1.4;
             }
+
             .name {
                 margin: 10px 0 0 40px;
             }
+            
             .stars {
                 text-align: center;
                 color: @color-black;
