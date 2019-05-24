@@ -7,6 +7,8 @@
     <script src='components\HomeContent\homecontent.js' async></script>
     <script src='components\CurrentlyFeatured\currentlyfeatured.js' async></script>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
     <link href='https://fonts.googleapis.com/css?family=Cynzel|Oxygen' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,65 +18,84 @@
     <div class='nav'>
         <nav>
             <span class='nav-logo'>
-                <img src="https://book-r.netlify.com/static/media/bookr_logo_white.10916577.png" />
+                <a href='index.html'><img src="https://book-r.netlify.com/static/media/bookr_logo_white.10916577.png"></a>
             </span>
-            <ul class='nav-links'>
-                <li href='about.html'>Our Team</li>
-                <li>Contact</li>
-                <li href='https://book-r.netlify.com/login'>Log-in</li>
+            <ul class='nav-links' >
+                <a href='about.html'><li>Our Team</li></a>
+                <a href='#'><li>Contact</li></a>
+                <a href='https://book-r.netlify.com/login'><li class='nav-button'>Log-In</li></a>
+
+                <a href='https://twitter.com/' class='icon'><li  id='break'><i class="fab fa-twitter"></i></li></a>
+                <a href='https://youtube.com/' class='icon'><li><i class="fab fa-instagram"></i></li></a>
+                <a href='https://instagram.com/'class='icon'><li><i class="fab fa-youtube"></i></li></a>
             </ul>
         </nav>
     </div>
     
-    <div class='header' id='home'>
+    <div class='header'>
         <div class='cta-container'>
             <div class='cta-motto'>
-                <h2 class='motto-text'>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</h2>
+                <h2 class='motto-text'>Bookr is here to keep you focused on your studies, rather than searching for the right books. Thousands of peer-reviewed text books are available with just a click.<br>Advance your education, and pick the right text books with Bookr.</h2>
             </div>
-            <button class='cta-button' href='https://book-r.netlify.com/join'>
+            <a href='https://book-r.netlify.com/join'><button class='cta-button'>
                 Join Now
-            </button>
+            </button></a>
         </div>
     </div>
 
     <div class='cta-mobile'>
         <div class='cta-motto'>
-            <h2 class='motto-text'>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</h2>
+            <h2 class='motto-text'>Bookr is here to keep you focused on your studies, rather than searching for the right books. Thousands of peer-reviewed text books are available with just a click.<br>Advance your education, and pick the right text books with Bookr.</h2>
         </div>
         <button class='cta-button' href='https://book-r.netlify.com/join'>
             Join Now
         </div>
     </div>
 
-    <div class='home-info'>
-        <div class='content'>
-            <h3>Header Here</h3>
-            <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
-            <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
+    <div class='home-container'>
+        <div class='home-info'>
+            <div class='content'>
+                <h3><i class="fas fa-search"></i>&nbsp;&nbsp;&nbsp; Find Books &nbsp;&nbsp;&nbsp;<i class="fas fa-globe-americas"></i></h3>
+                <p>Bookr makes it easy to find books for any class you might be taking. Able to search by subject, author, or title; you'll be able to find the text that'll give you a step up in your studies.</p>
+                <p>Now that Bookr is making a statement in colleges at across the Americas, you'll be able to find relevant texts for any major or course. </p>
+            </div>
+            <div class='content'>
+                <h3><i class="far fa-star"></i>&nbsp;&nbsp;&nbsp; Review Books &nbsp;&nbsp;&nbsp;<i class="fas fa-star"></i></h3>
+                <p>Once you've finished a class, it's easy to leave a review on the texts you used. Search for the book title, select how many star rating it receives, and leave a comment about your thoughts.</p>
+                <p>With each rating that a book receives, it's relevancy score rises. By rating your textbooks, you're giving the power and knowledge to others to make educated decisions on what books they'll choose.</p>
+            </div>
         </div>
-        <div class='content'>
-            <h3>Header Here</h3>
-            <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
-            <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
-        </div>
-        <div class='content'>
-            <h3>Header Here</h3>
-            <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
-            <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
+
+        <div class='home-info'>
+            <div class='content'>
+                <h3><i class="fas fa-heart"></i>&nbsp;&nbsp;&nbsp; Save Favorites &nbsp;&nbsp;&nbsp;<i class="fas fa-bookmark"></i></h3>
+                <p>Hear about a good text for a class, or stumble on something interesting while searching through a catalogue? Bookr has a favorites feature that'll keep track of those for later!</p>
+                <p>Just a click of a button, and your favorites are saved to your profile ready to be viewed at any time. Search for your other student's favorite books, and see what they've saved for reference.</p>
+            </div>
+            <div class='content'>
+                <h3><i class="fas fa-chart-area"></i>&nbsp;&nbsp;&nbsp; Study Effectively &nbsp;&nbsp;&nbsp;<i class="fas fa-graduation-cap"></i></h3>
+                <p>Don't waste your time on poorly written, out-of-date textbooks again. This app helps you find the books that'll help you learn the material, and ace your classes.</p>
+                <p>In 2018 Bookr was able to really push students to the next level. Students reporting that they used Bookr for each class they were taking, increased 3/4 of a letter grade on their GPA.</p>
+            </div>
         </div>
     </div>
 
     <div class='featured-container'>
-        <h2>Currently Featured Text Books:</h2>
+        <div class='featured-header-container'><h2>Currently Featured Text Books:</h2></div>
         <div class='currently-featured'>
             <div class='book-container'>
                 <div class='book-img'>
                     <img src='assets\FeaturedBookStandIn.jpg'>
                 </div>
                 <div class='book-info' data-set='1'>
-                    <h3>Header Here</h3>
-                    <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
-                    <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
+                    <div class='info-container'>
+                        <h4>The Last Wish</h4>
+                        <p><b>Author: </b>Andrzej Sapkowski</p>
+                        <p><b>Average Rating: </b><span class='filled'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><i class="far fa-star"></i></p>
+                        <p><b>Categories: </b>Fantasy, Unicorn</p>
+                        <br><br>
+                        <a  href='https://book-r.netlify.com/featured/1'><button class='book-read-more'>View Now</button></a>
+                    </div>
                 </div>
             </div>
             <div class='book-container'>
@@ -82,9 +103,14 @@
                     <img src='assets\AmoredSaint.jpg'>
                 </div>
                 <div class='book-info hidden-book' data-set='2'>
-                    <h3>Header Here</h3>
-                    <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
-                    <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
+                    <div class='info-container'>
+                        <h4>The Armored Saint</h4>
+                        <p><b>Author: </b>Myke Cole</p>
+                        <p><b>Average Rating: </b><span class='filled'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></p>
+                        <p><b>Categories: </b>Historical Fiction, Fantasy, Love</p>
+                        <br><br>
+                        <a href='https://bookr-ming.netlify.com/featured-books/2'><button class='book-read-more'>View Now</button></a>
+                    </div>
                 </div>
             </div>
             <div class='book-container'>
@@ -92,40 +118,93 @@
                     <img src='assets\Sabriel.jpg'>
                 </div>
                 <div class='book-info hidden-book' data-set='3'>
-                    <h3>Header Here</h3>
-                    <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
-                    <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
+                    <div class='info-container'>
+                        <h4>Sabriel</h4>
+                        <p><b>Author: </b>Garth Nix</p>
+                        <p><b>Average Rating: </b><span class='filled'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><i class="far fa-star"></i></p>
+                        <p><b>Categories: </b>Fantasy, Death, Mysterious Cats</p>
+                        <br><br>
+                        <a href='https://book-r.netlify.com/featured/4'><button class='book-read-more'>View Now</button></a>
+                    </div>
                 </div>
             </div>
             <div class='book-container'>
-                    <div class='book-img'>
-                        <img src='assets\JurassicPark.jpg'>
+                <div class='book-img'>
+                    <img src='assets\JurassicPark.jpg'>
+                </div>
+                <div class='book-info hidden-book' data-set='4'>
+                    <div class='info-container'>
+                        <h4>Jurassic Park</h4>
+                        <p><b>Author: </b>Michael Crichton</p>
+                        <p><b>Average Rating: </b><span class='filled'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></p>
+                        <p><b>Categories: </b>Dinosaurs, Good Decision Making, Old Man Dies in the End</p>
+                        <br><br>
+                        <a href='https://bookr-ming.netlify.com/featured-books/6'><button class='book-read-more'>View Now</button></a>
                     </div>
-                    <div class='book-info hidden-book' data-set='4'>
-                        <h3>Header Here</h3>
-                        <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
-                        <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
-                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class='home-lower-content'>
         <div class='testimonial'>
-
+            <div class='testimonial-img'>
+                <div class='test-img-holder'><img src='assets\Reviewer1.jpg' /></div>
+            </div>
+            <div class='testimonial-review'>
+                    <p><i class="fas fa-quote-left"></i>&nbsp;&nbsp;I was just starting my junior level classes of engineering, when I started to find myself falling behind. Some of the books we were reading weren't helping me get the material and I was starting to worry about making it to the end of my degree.</p>
+                    <p>When my advisor recommended Bookr, I was a bit skeptical, but after reading through the reviews for books on thermodynamics I found the perfect book. I ended up finishing that class with an A-, and now I use Bookr for every class!&nbsp;&nbsp;<i class="fas fa-quote-right"></i></p>
+                <p class='name'><i class="fas fa-angle-double-right"></i>&nbsp;&nbsp; Jane Smith</p>
+                <div class='stars'><span class='filled'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></div>
+            </div>
+        </div>
+        <div class='testimonial'>'
+            <div class='testimonial-img'>
+                <div class='test-img-holder'><img src='assets\Reviewer2.jpg' /></div>
+            </div>
+            <div class='testimonial-review'>
+                <p><i class="fas fa-quote-left"></i>&nbsp;&nbsp;I love the Bookr app. I'm constantly adding to my various lists of favorites for reading that will help me with classes, or just push my understanding to the next level. It's so simple to use, that it's easily become a part of my routine when studying.</p>
+                <p>I started using it when I started my Business degree, and have never looked back. Not only does it help me pick the right text for the class, I'm able to use the app to recommend reading to my peers. Without the Bookr app I wouldn't have graduated with a 4.0.&nbsp;&nbsp;<i class="fas fa-quote-right"></i></p>
+                <p class='name'><i class="fas fa-angle-double-right"></i>&nbsp;&nbsp; Houndini Barnes</p>
+                <div class='stars'><span class='filled'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></div>
+            </div>
         </div>
         <div class='testimonial'>
-            
-        </div>
-        <div class='testimonial'>
-            
+            <div class='testimonial-img'>
+                <div class='test-img-holder'><img src='assets\Reviewer3.jpg' /></div>
+            </div>
+            <div class='testimonial-review'>
+                <p><i class="fas fa-quote-left"></i>&nbsp;&nbsp;When one of my students informed me of the Bookr app, I thought it was just going to be the latest fad. Over the last few months, it's rising popularity has definitely made itself known in my courses.</p>
+                <p>Now I'm using the app to help vet the text books that I'm going to select for my courses. Being able to see feedback from students directly, is really helping me tune my curriculum. I'm really looking forward to improved educator skills.&nbsp;&nbsp;<i class="fas fa-quote-right"></i></p>
+                <p class='name'><i class="fas fa-angle-double-right"></i>&nbsp;&nbsp; Prof Inita Jones</p>
+                <div class='stars'><span class='filled'><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><i class="far fa-star"></i></div>
+            </div>
         </div>
     </div>
 
     <div class='footer'>
-        <h3>Header Here</h3>
-        <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
-        <p>“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”</p>
+        <div class='footer-container'>
+            <div class='footer-columns'>
+                <div class='footer-section'>
+                    <a href='index.html'>Home</a>
+                    <a href='about.html'>About</a>
+                    <a href='#'>Contact</a>
+                </div>
+                <div class='footer-section'>
+                    <a href='https://book-r.netlify.com/login'>Log-in</a>
+                    <a href='https://book-r.netlify.com/join'>Register</a>
+                </div>
+                <div class='footer-section'>
+                    <a href='https://twitter.com/'><i class="fab fa-twitter"></i></a>
+                    <a href='https://youtube.com/'><i class="fab fa-instagram"></i></a>
+                    <a href='https://instagram.com/'><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class='footer-copyright'>
+            <p class='copyright'>&copy; 2019 Bookr, All rights reserved.</p>
+        </div>
     </div>
 
 </body>

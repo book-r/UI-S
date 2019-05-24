@@ -1,0 +1,55 @@
+.headerabout {
+    height: 600px;
+    width: 100%;
+    background: url('../assets/AboutMainModified.jpg') ;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    @media(max-width: 500px) {
+        display: none;
+    }
+    .about-container {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+
+        .about-team {
+            width: 480px;
+            margin-left: 300px;
+            background-color:  #034732B3;  //70% - HEX Opacity https://gist.github.com/frankyonnetti/9400858
+            padding: 20px;
+            border-radius: 10px;
+
+            h2 {
+                color: @color-offwhite;
+                font-size: 24px;
+                line-height: 1.4;
+                font-family: @font-secondary;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+.about-mobile {
+    display: none;
+
+    @media(max-width: 500px) {
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: @color-secondary;
+    
+    }
+
+    .statement {
+        .motto-text h2 {
+        font-size: 24px;
+        font-family: @font-secondary;
+        color: @color-offwhite;
+        font-weight: normal;
+        }
+    }
+}

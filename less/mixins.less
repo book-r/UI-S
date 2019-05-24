@@ -1,7 +1,15 @@
-.width-100 {
-    width: 100%;
-  }
+.btn-primary (@button-color, @button-font, @button-change) {
+    font-weight: bold;
+    font-style: @font-secondary;
+    background-color: @button-color;
+    text-align: center;
+    color: @button-font;
+    border-radius: 4px;
+    transition-duration: .6s;
+    border: none;
+    letter-spacing: 1.4px;
 
-  // @color-opacity(@color, @opacity) {
-  //   background-color: `${@color}{@opacity}`
-  // }
+    &:hover {
+      background-color: @button-change;
+    }
+}
