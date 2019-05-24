@@ -323,21 +323,23 @@ table {
   text-align: center;
   padding-top: 30px;
 }
-.home-info {
+.home-container {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.home-container .home-info {
   max-width: 1200px;
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px auto;
 }
 @media (max-width: 500px) {
-  .home-info {
+  .home-container .home-info {
     flex-direction: column;
   }
 }
-.home-info .content {
+.home-container .home-info .content {
   width: 40%;
   border: 1px solid black;
   padding: 15px;
@@ -346,23 +348,25 @@ table {
   box-shadow: 3px 3px 5px 1px #353b48;
 }
 @media (max-width: 500px) {
-  .home-info .content {
+  .home-container .home-info .content {
     width: 90%;
     margin: 10px;
   }
 }
-.home-info .content h3 {
+.home-container .home-info .content h3 {
   text-align: center;
   color: #028090;
-  padding-bottom: 6px;
+  padding-bottom: 15px;
   font-size: 22px;
   font-family: 'Raleway', Arial, sans-serif;
+  letter-spacing: 1.4px;
 }
-.home-info .content p {
+.home-container .home-info .content p {
   color: #FCFCFC;
   padding-bottom: 6px;
-  font-size: 16px;
+  font-size: 18px;
   font-family: base;
+  line-height: 1.4;
 }
 .featured-container {
   padding: 15px;
@@ -463,11 +467,14 @@ table {
     max-width: 400px;
   }
 }
+.home-lower-content {
+  margin: 90px 0 90px 0;
+}
 .home-lower-content .testimonial {
   display: flex;
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
-  margin: 20px auto;
+  margin: 30px auto;
   background-color: #FCFCFC;
   border: 2px solid #020207;
   box-shadow: 3px 3px 5px 1px #353b48;
@@ -477,14 +484,20 @@ table {
   margin: 15px;
   border-right: 2px solid #066339;
 }
+.home-lower-content .testimonial .testimonial-img .test-img-holder {
+  padding-right: 20px;
+}
 .home-lower-content .testimonial .testimonial-img .test-img-holder img {
   border-radius: 50%;
-  padding-right: 20px;
   width: 150px;
   height: 150px;
+  box-shadow: 3px 3px 5px 1px #9a9da3;
 }
 .home-lower-content .testimonial .testimonial-review {
   padding: 10px;
+}
+.home-lower-content .testimonial .testimonial-review p {
+  line-height: 1.4;
 }
 .home-lower-content .testimonial .testimonial-review .name {
   margin: 10px 0 0 40px;
@@ -495,7 +508,7 @@ table {
   letter-spacing: 10px;
 }
 .home-lower-content .testimonial .testimonial-review .stars .filled {
-  color: #066339;
+  color: #028090;
 }
 .headerabout {
   height: 600px;

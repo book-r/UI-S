@@ -1,9 +1,11 @@
 .home-lower-content {
+    margin: 90px 0 90px 0;
+
     .testimonial {
         display: flex;
-        max-width: 900px;
+        max-width: 1000px;
         width: 100%;
-        margin: 20px auto;
+        margin: 30px auto;
         background-color: @color-offwhite;
         border: 2px solid @color-black;
         box-shadow: 3px 3px 5px 1px #353b48;
@@ -14,12 +16,13 @@
             border-right: 2px solid @color-secondary;
 
             .test-img-holder {
+                padding-right: 20px;
 
                 img {
                     border-radius: 50%;
-                    padding-right: 20px;
                     width: 150px;
                     height: 150px;
+                    box-shadow: 3px 3px 5px 1px #9a9da3;
                 }
             }
 
@@ -27,6 +30,10 @@
 
         .testimonial-review {
             padding: 10px;
+
+            p {
+                line-height: 1.4;
+            }
             .name {
                 margin: 10px 0 0 40px;
             }
@@ -36,7 +43,7 @@
                 letter-spacing: 10px;
 
                 .filled {
-                    color: @color-secondary;
+                    color: @color-primary;
                 }
             }
         }
